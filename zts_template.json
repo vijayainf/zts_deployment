@@ -1,0 +1,202 @@
+[
+  {
+    "name": "service",
+    "value": ""
+  },
+  {
+    "name": "cnfName",
+    "value": ""
+  },
+  {
+    "name": "chartValues",
+    "value": {
+      "cmserver": {
+        "deltaQueryLen": 15
+      },
+      "tags": {
+        "lms_service_enabled": true,
+        "jaeger_server_enabled": false,
+        "ccs_service_enabled": false
+      },
+      "global": {
+        "storageclass": {
+          "ReadWriteManyAccess": "csi-cephfs",
+          "ReadWriteOnceAccess": "csi-cephrbd"
+        },
+        "AIF_Enabled": "True",
+        "awsDeploy": false,
+        "tanzuDeploy": false,
+        "openshiftDeploy": false,
+        "OAMPodAntiAffinity": {
+          "topologykey": "zone"
+        },
+        "SecurityContext": {
+          "PodSecurityContextEnabled": true,
+          "ContainerSecurityContextEnabled": true
+        },
+        "efs_storageClass_change_on_upgrade": false,
+        "passwordlessAuthForNetact": false,
+        "DestinationType": {
+          "fmelastic": false,
+          "fmkafka": true,
+          "logelastic": false,
+          "logkafka": true,
+          "fmfluentd": false,
+          "logfluentd": false
+        },
+        "LogSftpServerUsername": "logs",
+        "bssc_support_auto_migration": false,
+        "enable_sftp_server_at_logserver_for_file_fetch": false,
+        "NetactMrname": "MRC-MRC/MR-CFX",
+        "Netact_dmgr_password": "N0kia_123",
+        "Netact_dmgr_username": "integration",
+        "adminpassword": "Noki@234",
+        "ztspassword": "Noki@234",
+        "NetactPlmn": "PLMN-IMS",
+        "Netact_Dmgr_Address": "135.104.69.25",
+        "Netact_Dmgr_Address_Type": "IPv4",
+        "lms_service_enabled": true,
+        "Terminate_If_VnfDelete_Failed": true,
+        "telemetry_nbi_netact_enabled": true,
+        "TlsEnabledWithNetAct": true,
+        "auditLogsRetentionDays": 7,
+        "audit_log_archive_retention_period": 10080,
+        "audit_log_retention_period": 2880,
+        "cbur": {
+          "backend_mode": "AVAMAR",
+          "cron_spec": "0 16 * * *",
+          "max_copy": 2,
+          "brPolicyApiVersion": "cbur.csf.nokia.com/v1"
+        },
+        "cnf_specific_visualization_enabled": true,
+        "cfxProcHeapDataRetentionDays": 3,
+        "cfxCtxCountDataRetentionDays": 3,
+        "cfxDumplogDataRetentionDays": 3,
+        "cfxCountersDataRetentionDays": 3,
+        "cfxRoutingTableDataRetentionDays": 3,
+        "clustername": "nsv7a0cscf0001c",
+        "jaeger_server_enabled": false,
+        "jaeger_tls_client_enable": false,
+        "counteralarmtracelevel": "error",
+        "debugLogsRetentionDays": 7,
+        "debug_log_archive_retention_period": 10080,
+        "debug_log_retention_period": 2880,
+        "domainname": "svc.cluster.local",
+        "zts_overload_handling_for_ingress_sbi_traffic_enabled": true,
+        "autoscale_hpa_enabled": false,
+        "enable_multus": true,
+        "enable_nbi_traffic_separation": false,
+        "enable_fss": false,
+        "es_data_replicas": 2,
+        "externalCA": false,
+        "ccs_service_enabled": false,
+        "certValidationMethod": "CRL",
+        "pm_nbi_ccs_enabled": true,
+        "ccs_lad_tsl_ml_enabled": false,
+        "externalCAForNetact": false,
+        "externalCAHost": "127.0.0.1",
+        "externalCAProtocol": "CMPv2",
+        "fmDataRetentionDays": 7,
+        "cmcnfdatadelete": "enable",
+        "imageRegistry": "harbor-harbor-core.ncms.svc/volte/corepaas-docker-local.bhisoj70.apac.nsn-net.net",
+        "ipv6interface": "disable",
+        "ipFamilies": [
+          "IPv4"
+        ],
+        "istioEnabled": false,
+        "DBCacheSizeForProcessedPMData": 200000,
+        "jobhookenable": true,
+        "keycloakCburConfigEnabled": false,
+        "liLogsRetentionDays": 7,
+        "li_log_archive_retention_period": 10080,
+        "li_log_retention_period": 2880,
+        "ccs_lad_mlmm_ml_enabled": false,
+        "timeZoneEnv": "UTC",
+        "datasink_service_enabled": true,
+        "backuprestore_service_enabled": true,
+        "log_archive_retention_period": 10080,
+        "zts_deployment_mode": "integrated",
+        "cm_metadata_major_version": "1",
+        "ss_metadata_major_version": "1",
+        "egress_mode": {
+          "enable_egressgateway": false,
+          "calico_interface": "eth1"
+        },
+        "multus": {
+          "multuscidr": "135.104.70.0",
+          "multuscontainer_prefix": "eth1",
+          "multushost_device": "vlan100",
+          "multusname": "nsv7a0cscf0001cnsdoamnet0",
+          "useExternalMultus": false,
+          "multussubnetmask": 24,
+          "route_gw": "135.104.70.1",
+          "ztslenvoylbip1": "135.104.70.125",
+          "ztslenvoylbip2": "135.104.70.126"
+        },
+        "pmDataRetentionDays": 7,
+        "postbackup": 0,
+        "postrestore": 0,
+        "prebackup": 0,
+        "prerestore": 0,
+        "query_dependencies_dagMaxNumService": 200,
+        "query_dependencies_menuEnabled": true,
+        "query_search_maxLimit": 1500,
+        "query_search_maxLookback": 2,
+        "sa_service_enabled": true,
+        "zts_remote_core_tracing": "disabled",
+        "securityLogsRetentionDays": 7,
+        "jaegerDataRetentionDays": 7,
+        "security_log_archive_retention_period": 10080,
+        "security_log_retention_period": 2880,
+        "servicedomainName": "svc.cluster.local",
+        "settings_max_retry": 3,
+        "settings_sleep_time": 30,
+        "settings_vnfstatus_max_retry": 20,
+        "vnf_deletestatus_max_retry": 10,
+        "vnfdelete_sleep_time": 60,
+        "vnfname": "nsv7a0cscf0001c",
+        "vnftype": "CFX",
+        "vnfctype": "CA",
+        "loginBanner": "Warning Notice This system is restricted solely to AT&T authorized users for legitimate business purposes only. The actual or attempted unauthorized access, use, or modification of this system is strictly prohibited by AT&T. Unauthorized users are subject to Company disciplinary proceedings and/or criminal and civil penalties under state, federal, or other applicable domestic and foreign laws. The use of this system may be monitored and recorded for administrative and security reasons. Anyone accessing this system expressly consents to such monitoring and is advised that if monitoring reveals possible evidence of criminal activity, AT&T may provide the evidence of such activity to law enforcement officials. All users must comply with AT&T company policies regarding the protection of AT&T information assets.",
+        "enableCMRollbackConfig": false,
+        "cmRestrictFileAccess": false,
+        "UmIdpConfig": {
+          "UmIdpFederation": false
+        },
+        "workerNodeSelector": [
+          {
+            "key": "is_worker",
+            "value": "true"
+          }
+        ],
+        "edgeNodeSelector": [
+          {
+            "key": "is_edge",
+            "value": "true"
+          }
+        ],
+        "workerTolerations": [
+          {
+            "key": "is_worker",
+            "operator": "Equal",
+            "effect": "NoExecute",
+            "value": "true"
+          }
+        ],
+        "edgeTolerations": [
+          {
+            "key": "is_edge",
+            "operator": "Equal",
+            "effect": "NoExecute",
+            "value": "true"
+          }
+        ]
+      },
+      "bssc-ifd": {
+        "bssc-indexsearch": {
+          "network_host": "_site_"
+        }
+      }
+    }
+  }
+]
